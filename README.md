@@ -1,5 +1,5 @@
 # Mapping
-Sub-repository for mapping &amp; localization subteam.
+Sub-repository for mapping & localization subteam.
 
 mapping.sh: this is the main script that runs the mapping pipeline (setting up rtabmap (localization), foxglove (visualizing the 3D map produced by depth camera), and nav2 (framework for rover's navigation and path planning.)
 
