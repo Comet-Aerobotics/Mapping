@@ -5,7 +5,6 @@ mapping.sh: this is the main script that runs the mapping pipeline (setting up r
 
 nav_apriltag.py: this is a Python script that publishes a ROS2 Node. Its purpose is to scan an AprilTag, set it as the goal, and instruct the rover to navigate to it following Nav2's built-in pathfinding algorithm. 
 
-A more comprehensive documentation regarding the uses and purposes of mapping.sh and nav_apriltag.py will be published shortly...
 -----------------------------------------------------------
 ## Terminology
 **3D Point Cloud:**  A collection of 3D points with (x, y, z) coordinates.
@@ -13,7 +12,8 @@ A more comprehensive documentation regarding the uses and purposes of mapping.sh
 + Thinks of this as how the rover "sees" its environment.
 
     <img width="373" height="296" alt="image" src="https://github.com/user-attachments/assets/eb614306-b7e5-48ba-9745-1b616eb319b4" />
-    <sub>Example of a 3d point cloud map. </sub>
+
+  <sub>Example of a 3d point cloud map. </sub>
 
 
 **Nav2:**  A ROS2 navigation framework that uses path-planning algorithms (e.g., Dijkstra, A*) to help the rover maneuver through obstacles and reach its destination.
@@ -25,7 +25,7 @@ A more comprehensive documentation regarding the uses and purposes of mapping.sh
 
   <img width="161" height="155" alt="image" src="https://github.com/user-attachments/assets/e8295b59-0ef3-4fdf-a95c-baa9c0bf11c1" />
 
-## Pipe Line (coming soon)
+## Pipe Line 
 Run `./mapping.sh` to launch the following necessary processes for mapping and localization.
 1. RTAB-Map: createa 3D map of the environment
 2. apriltag_ros: detects AprilTags
